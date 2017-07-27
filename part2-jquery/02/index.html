@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>test Deferred</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>test Deferred</h1>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      // 封装
+      function waitHandle () {
+        var dtd = $.Deferred() // 创建deferred对象
+
+        var wait = function (dtd) {
+          var task = function () {
+            console.log('执行完成')
+            dtd.resolve() // 表示异步任务完成
+            // dtd.reject() // 表示异步任务失败
+           }
+
+          setTimeout(task, 2000);
+          return dtd // 返回Deferred对象
+        }
+        return wait(dtd)
+      }
+
+      var w = waitHandle()
+      w.then(function () {
+        console.log('ok 1')
+      }, function () {
+        console.log('err 1')
+      })
+      .then(function () {
+        console.log('ok 2')
+      }, function () {
+        console.log('err 2')
+      })
+    </script>
+  </body>
+</html>
