@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>test ajax</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>test ajax</h1>
+    <button id="submit">提交</button>
+    <div id="data">
+      
+    </div>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $().ready(function () {
+        console.log('jQuery ready!')
+        $('#submit').click(function () {
+          $.ajax({
+            url: '/data/data1.json',
+            success: function () {
+              console.log('success!')
+            }
+          })
+        })
+      })
+    </script>
+  </body>
+</html>
