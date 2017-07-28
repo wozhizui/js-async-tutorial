@@ -39,7 +39,7 @@ console.log(obj)  // {a: 100, Symbol(Symbol.iterator): 200}
 ```javascript
 // 数组
 console.log([1, 2, 3][Symbol.iterator])  // function values() { [native code] }
-// 某些类似数组的对象，NoeList
+// 某些类似数组的对象，NodeList
 console.log(document.getElementsByTagName('div')[Symbol.iterator])  // function values() { [native code] }
 ```
 
