@@ -15,7 +15,7 @@ function readFilePromise (filename) {
 
 co(function* () {
   const r1 = yield readFilePromise('data/data1.json')
-  console.log(r1)
   const r2 = yield readFilePromise('data/data2.json')
+  console.log(r1)
   console.log(r2)
 })

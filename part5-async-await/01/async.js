@@ -1,3 +1,4 @@
+// async表示函数里有异步操作，await表示紧跟在后面的表达式需要等待结果
 const Q = require('q')
 const fs = require('fs')
 
