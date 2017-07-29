@@ -1,0 +1,20 @@
+{
+  "name": "generator_thunk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "thunkify",
+    "generator"
+  ],
+  "author": "lixiaochun",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "q": "^1.5.0",
+    "thunkify": "^2.1.2"
+  }
+}
