@@ -1,5 +1,9 @@
 # 深入理解 JavaScript 异步
 
+## fork缘由
+
+将文中出现的代码添加
+
 ## 前言
 
 2014年秋季写完了《[深入理解javascript原型和闭包系列](http://www.cnblogs.com/wangfupeng1988/p/4001284.html)》，已经帮助过很多人走出了 js 原型、作用域、闭包的困惑，至今仍能经常受到好评的留言。
@@ -69,13 +73,3 @@ $ http-server -p 8881
 ```
 
 然后浏览器访问`http://localhost:8881/xxx/xxx.html`即可
-
-## 作者的教程
-
-《[React.js模拟大众点评webapp](http://coding.imooc.com/class/99.html)》《[前端JS基础面试题讲解](http://coding.imooc.com/class/115.html)》《[zepto设计和源码分析](http://www.imooc.com/learn/745)》
-
-## 求打赏
-
-如果你看完了，感觉还不错，欢迎给我打赏 ———— 以激励我更多输出优质内容
-
-![](http://images2015.cnblogs.com/blog/138012/201702/138012-20170228112237798-1507196643.png)
